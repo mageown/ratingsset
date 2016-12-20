@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package    Mageown_Core
+ * @author     Mageown
+ * @contacts   https://mageown.com/
+ */
+ -->
+<config>
+    <tabs>
+        <Mageown translate="label" module="Mageowncore">
+            <label>Mageown Functions</label>
+            <sort_order>100</sort_order>
+        </Mageown>
+    </tabs>
+</config>

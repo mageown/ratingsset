@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package    Mageown_RatingsSet
+ * @author     Mageown
+ * @contacts   https://mageown.com/
+ */
+ -->
+<config>
+    <modules>
+        <Mageown_RatingsSet>
+            <version>0.0.4</version>
+        </Mageown_RatingsSet>
+    </modules>
+    <global>
+        <blocks>
+            <review>
+                <rewrite>
+                    <form>Mageown_RatingsSet_Block_Review_Form</form>
+                </rewrite>
+            </review>
+            <adminhtml>
+                <rewrite>
+                    <review_rating_detailed>Mageown_RatingsSet_Block_Adminhtml_Review_Rating_Detailed</review_rating_detailed>
+                </rewrite>
+            </adminhtml>
+            <mageown_ratingsset_adminhtml>
+                <class>Mageown_RatingsSet_Block_Adminhtml</class>
+            </mageown_ratingsset_adminhtml>
+        </blocks>
+        <helpers>
+            <mageown_ratingsset>
+                <class>Mageown_RatingsSet_Helper</class>
+            </mageown_ratingsset >
+        </helpers>
+        <models>
+            <review>
+                <rewrite>
+                    <review>Mageown_RatingsSet_Model_Review</review>
+                </rewrite>
+            </review>
+            <mageown_ratingsset>
+                <class>Mageown_RatingsSet_Model</class>
+                <resourceModel>mageown_ratingsset_resource</resourceModel>
+            </mageown_ratingsset>
+            <mageown_ratingsset_resource>
+                <class>Mageown_RatingsSet_Model_Resource</class>
+                <entities>
+                    <set>
+                        <table>mageown_ratingsset_set</table>
+                    </set>
+                </entities>
+            </mageown_ratingsset_resource>
+        </models>
+        <resources>
+            <mageown_ratingsset_setup>
+                <setup>
+                    <module>Mageown_RatingsSet</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </mageown_ratingsset_setup>
+        </resources>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Mageown_RatingsSet after="Mage_Adminhtml">Mageown_RatingsSet_Adminhtml</Mageown_RatingsSet>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>

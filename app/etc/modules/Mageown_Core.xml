@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package    Mageown_Core
+ * @author     Mageown
+ * @contacts   https://mageown.com/
+ */
+ -->
+<config>
+    <modules>
+        <Mageown_Core>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Mageown_Core>
+    </modules>
+</config>

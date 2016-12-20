@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package    Mageown_RatingsSet
+ * @author     Mageown
+ * @contacts   https://mageown.com/
+ */
+ -->
+<config>
+    <modules>
+        <Mageown_RatingsSet>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mageown_Core />
+            </depends>
+        </Mageown_RatingsSet>
+    </modules>
+</config>
