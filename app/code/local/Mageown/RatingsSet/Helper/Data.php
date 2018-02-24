@@ -14,7 +14,7 @@ class Mageown_RatingsSet_Helper_Data extends Mage_Core_Helper_Abstract
      */
     public function getDefaultSet()
     {
-        $ratingsSet = Mage::getConfig(self::RATINGSSET_GLOBAL_DEFAULT);
+        $ratingsSet = Mage::getStoreConfig(self::RATINGSSET_GLOBAL_DEFAULT);
         return $ratingsSet;
     }
 
